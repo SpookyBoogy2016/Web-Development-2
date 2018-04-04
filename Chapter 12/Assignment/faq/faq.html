@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<div class = "container">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="jquery-ui.min.js"></script>
+    <script>
+      $(document).ready(function() {
+      $("#accordion").accordion(
+        {
+          active: false,
+          event: "dblclick",
+          collapsible: true
+        });
+      });
+    </script>
+    <style>
+    .ui-accordion-content-active
+      {
+        padding: 0 !important;
+        border-style: none;
+        background-color: transparent;
+        background-image: none;
+      }
+    </style>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+    <title>Book O Rama</title>
+    <h1 class = customfont> Book O Rama</h1>
+  </head>
+  <body>
+    <div class="center">
+      <main>
+          <h1>Book O Rama FAQ</h1>
+          <div id = "accordion">
+          <h2>
+            <a href="#" >What is Book O Rama?</a>
+          </h2>
+          <div>
+            <p>
+              Book O Rama is a online store where you can shop for magazines and books.
+            </p>
+          </div>
+          <h2><a href="#">What kind of books does Book O Rama provide?</a></h2>
+          <div>
+            <p>
+              Other than magazines, Book O Rama provides a wide variety books ranging from entertaining to informative books.
+            </p>
+          </div>
+          <h2><a href="#">Does Book O Rama provide free shipping?</a></h2>
+          <div>
+            <p>
+              As of right now, we do not provide free shipping. We apologize for the inconvenience. However, we are implementing free shipping features after a certain amount of purchases. Stay tuned for further upgrades!
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</div>
+</html>

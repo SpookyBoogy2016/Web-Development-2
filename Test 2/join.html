@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="animate.js"></script>
+	<script>
+		var x = Math.floor((Math.random() * 100) + 1);
+		if(x % 2 === 0){
+			alert(x + " is even number");
+		}
+		else{
+			alert(x + " odd number");
+		}
+	</script>
+</head>
+<body>
+	<main id = "animate">
+		<h1>Thanks for Joining!</h1>
+		<p id="date"></p>
+
+		<p>function myFunction() {</p>
+		<p>var x = Math.floor((Math.random() * 100) + 1);</p>
+		<p>if(x % 2 === 0)</p>
+		<p>  alert(x+" is even");</p>
+		<p>	else</p>
+		<p>				alert(x+" is not even");</p>
+	</main>
+	<script>
+		var date = new Date();
+		date.setDate(date.getDate() + 50);
+		document.getElementById("date").innerHTML = date;
+	</script>
+</body>
+</html>

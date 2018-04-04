@@ -1,0 +1,67 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url('Bella.ttf')
+}
+
+h1.customfont {
+  font-family: myFirstFont;
+  color: #333333;
+  font-size: 70px;
+  margin-left: 2.7em;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  height: 830px;
+  background: rgba(29, 208, 165, .5);
+  border-radius: 11px;
+}
+
+.center {
+  text-align: center;
+}
+
+.img1{
+  margin-left: .1em;
+}
+
+.img2{
+  margin-left: 5em;
+}
+
+.img3{
+  margin-left: 5em;
+}
+
+.sign{
+  border-radius: 8px;
+  padding: 10px 24px;
+  background-color: rgb(17, 173, 200);
+}
+
+body {
+  background-image: url("tree.png");
+  background-size: cover;
+}
+
+label {
+	float: left;
+  width: 11em;
+  text-align: right;
+  margin-left: 8em;
+}
+
+input {
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.err_span {
+	color: red;
+  margin-right: 5em;
+}
+
+.btnsubmit{
+  margin-right: 7em;
+}

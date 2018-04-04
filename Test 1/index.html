@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<div id="container">
+  <head>
+    <script src = "javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      do {
+        var age = prompt("The artists wish to know if you can drive them to their concert, they would like to know if you're old enough to get a drivers license to drive them. Please type in your age to see the artists photo.");
+        if(age <= 15 || age == isNaN)
+        {
+          alert("Take this seriously. You are either not old enough or you are not taking this seriously. We want someone who takes this even seriously. Do it right");
+        }
+      } while (age == isNaN || age <= 15);
+
+    </script>
+    <h1>Justino Liu Test 1</h1>
+  </head>
+  <body>
+    <h3>
+      My favorite artists
+    </h3>
+    <ul id="image_list">
+      <li><a href="image/aimer.jpg" title = "Aimer" class = "size"></a></li>
+      <li><a href="image/ohashi.jpg" title = "Ohashi Trio"></a></li>
+      <li><a href="image/oneokrock.jpg" title = "ONE OK ROCK"></a></li>
+    </ul>
+    <div id="center">
+      <p><img src="image/aimer.jpg" alt="Aimer" id="image" class = "size"></p>
+      <h3 id="caption">Aimer</h3>
+      <main id="faqs">
+        <h2>
+          <a href="#">Who are these people?</a>
+        </h2>
+        <div class = "display">
+          <p>They are well known japanese music artists</p>
+        </div>
+        <h2>
+          <a href="#">Why are they here?</a>
+        </h2>
+        <div class = "display">
+          <p>They are to perform at a concert</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</div>
+</html>

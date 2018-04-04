@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<div class = "container">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src = "email.js"></script>
+    <title>Book O Rama</title>
+    <h1 class = customfont> Book O Rama</h1>
+    <style>
+      span {
+        color: red;
+        margin-left: .5em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form id="email_form" name="email_form" action="success.html" method="get">
+        <h1 style = "text-align: center;">My Account Profile</h1>
+        <label for="email">E-Mail:</label>
+            <input type="text" name="email" id="email">
+            <span>&nbsp;</span><br>
+        <label for="phone">Mobile phone:</label>
+            <input type="text" name="phone" id="phone">
+            <span>&nbsp;</span><br>
+        <label for="zip">ZIP Code:</label>
+            <input type="text" name="zip" id="zip">
+            <span>&nbsp;</span><br>
+        <label for="dob">Date of Birth:</label>
+            <input type="text" name="dob" id="dob">
+            <span>&nbsp;</span><br>
+        <label for="card">Credit Card #:</label>
+            <input type="text" name="card" id="card">
+            <span>&nbsp;</span><br>
+        <label for="cc_date">Expire date:</label>
+        	<input type="text" name="cc_date" id="cc_date">
+        	<span>&nbsp;</span><br>
+        <label>&nbsp;</label>
+        <input type="submit" id="join" name="join" value="Join our List">
+      </form>
+    </main>
+  </body>
+</div>
+</html>

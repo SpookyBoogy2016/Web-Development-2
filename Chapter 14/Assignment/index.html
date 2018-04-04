@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<div class = "container">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="malsup.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+    <!-- <script type="text/javascript" src="rollover.js"></script> -->
+    <style>
+      .imgsize{
+        height: 300px;
+      }
+      #caption{
+        margin-top: .25em;
+      }
+
+    </style>
+    <title>Book O Rama</title>
+    <h1 class = customfont> Book O Rama</h1>
+  </head>
+  <body>
+    <div class = "center">
+      <h3>Welcome to Book O Roma!</h3>
+      <h4>We provide all the books you need for your studies or entertainment!</h4>
+      <h4>We are passionate about the written word and aim to create a community of lifelong readers.</h4>
+      <h4>We strive to provide the best service as we aim to increase our libraries in different fields.</h4>
+      <br>
+    </div>
+    <div class = "center">
+      <main>
+        <div class = "cycle-slideshow"
+          data-cycle-fx = "flipHorz"
+          data-cycle-timeout = "2000"
+          data-cycle-caption = "#caption"
+          data-cycle-center-horz = true
+          data-cycle-center-vert = true
+          data-cycle-caption-template = "{{cycleTitle}}">
+          <img src="book/harry.jpg" alt="" data-cycle-title = "Harry Pooter">
+          <img src="book/rag.jpg" alt="" data-cycle-title = "Ragtime">
+          <img src="book/water.jpg" alt="" data-cycle-title = "Into the Water">
+          <img src="book/six feet.jpg" alt="" data-cycle-title = "Six Feet Over It">
+          <div id="caption"></div>
+        </div>
+      </main>
+      <h4>Before you start, please sign up.</h4>
+      <a href = "signup.html"><button class = "sign" type="button">Sign Up</button></a>
+      <h4>If you have any inquiries, click FAQ for help.</h4>
+      <a href = "faq/faq.html"><button class = "sign" type="button">FAQ</button></a>
+      <h2>BIG SALE DAY</h4>
+      <a href = "event/event.html"><button class = "sign" type="button">Check to See Event</button></a>
+    </div>
+  </body>
+</div>
+</html>

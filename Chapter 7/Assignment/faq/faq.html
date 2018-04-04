@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<div class = "container">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="register.js"></script>
+    <title>Book O Rama</title>
+    <h1 class = customfont> Book O Rama</h1>
+    <style>
+    span {
+        color: red;
+    }
+    input[type="checkbox"],[type="radio"] {
+        width: 1em;
+    }
+    input, select {
+        width: 20em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class = "center">
+      <h3>Thank You for Chossing Book O Rama</h3>
+      <h4>If you have any quests, please fill out the form below and click send.</h4>
+      <h4>We will give you a reply within 1 business day.</h4>
+      <br>
+      <form action="faq_success.html" method="get"
+          name="registration_form" id="registration_form">
+
+          <label for="email_address">E-Mail:</label>
+              <input type="text" name="email_address" id="email_address">
+              <span>*</span>
+              <br>
+          <label for="phone">Mobile Phone:</label>
+              <input type="text" name="phone" id="phone">
+              <span>*</span>
+              <br>
+          <label for="country">Country:</label>
+              <select name="country" id="country">
+                <option value="">Select an option</option>
+                  <option>USA</option>
+                  <option>Canada</option>
+                  <option>Mexico</option>
+              </select>
+              <span>*</span>
+              <br>
+          <label>Contact me by:</label>
+              <input type="radio" name="contact" id="text" value="text" checked>Text
+              <input type="radio" name="contact" id="email" value="email">Email
+              <input type="radio" name="contact" id="m_phone" value="m_phone">Mobile Phone
+              <input type="radio" name="contact" id="none" value="none">Don't contact me
+          <br>
+
+          <label>Terms of Service:</label>
+              <input type="checkbox" name="terms" id="terms" value="yes">I accept
+              <span>*</span>
+              <br>
+
+          <label for="comment">Comments: </label>
+          <textarea name="comment" id="comment" cols="60" rows="7"></textarea>
+
+          <input type="button" id="register" value="Submit">
+          <input type="button" id="reset_form" value="Reset">
+      </form>
+    </div>
+  </body>
+</div>
+</html>

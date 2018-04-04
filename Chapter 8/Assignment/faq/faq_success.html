@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<div class = "container">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <title>Book O Rama</title>
+    <h1 class = customfont> Book O Rama</h1>
+  </head>
+  <body>
+    <div class = "center">
+      <h3>We Have Received Your Message</h3>
+      <div>Returning to home page in <span id="countdown">00:05</span> seconds! Or click </div>
+      <script type="text/javascript">
+        var seconds = 5;
+
+        function countdown() {
+          seconds = seconds - 1;
+          if (seconds < 0) {
+            // Chnage your redirection link here
+            window.location = "../index.html";
+          } else {
+            // Update remaining seconds
+            document.getElementById("countdown").innerHTML = seconds;
+            // Count down using javascript
+            window.setTimeout("countdown()", 1000);
+          }
+        }
+        // Run countdown function
+        countdown();
+      </script>
+      <br>
+      <a href = "../index.html"><button class = "sign" type="button">Return</button></a>
+    </div>
+  </body>
+</div>
+</html>

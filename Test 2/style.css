@@ -1,0 +1,50 @@
+#container {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 1000px;
+  background: rgb(235, 220, 25);
+  border-radius: 11px;
+}
+
+/* ul{
+  display: none;
+} */
+span {
+	color: red;
+	margin-left: .5em;
+}
+
+h3{
+  text-align: center;
+}
+
+.size{
+  width: 440px;
+  height: 440px;
+  margin-left: 145px;
+}
+
+#center{
+  margin: auto;
+  width: 55%;
+  border: 3px solid rgb(232, 142, 48);
+  padding: 10px;
+}
+
+h2 {
+    font-size: 120%;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+    background: url(image/plus.png) no-repeat left center;
+}
+h2.minus {
+    background: url(image/minus.png) no-repeat left center;
+}
+
+.display{
+    display: none;
+}
+div.open {
+    display: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<div class = "container">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" type="text/css" media="screen" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="countdown.js"></script>
+    <!-- <script type="text/javascript" src="rollover.js"></script> -->
+    <style>
+      .imgsize{
+        height: 300px;
+      }
+      #caption{
+        margin-top: .25em;
+      }
+
+    </style>
+    <title>Book O Rama</title>
+    <h1 class = customfont> Book O Rama</h1>
+  </head>
+  <body>
+    <div class = "center">
+      <h3>This is our next big sale event page!</h3>
+      <h3>The next big sale will happen on April 14, 2018! Stay tuned!</h3>
+      <p>In order to check days until the event, type in the date below with format: MM/DD/YYYY</p>
+      <br>
+      <main>
+        <h1>Countdown To...</h1>
+        <label for="event">Event Name:</label>
+        <input type="text" name="event" id="event"><br>
+        <label for="date">Event Date:</label>
+        <input type="text" name="date" id="date"><br>
+        <input type="button" name="countdown" id="countdown" value="Countdown!">
+        <p id="message">&nbsp;</p>
+      </main>
+    </div>
+  </body>
+</div>
+</html>

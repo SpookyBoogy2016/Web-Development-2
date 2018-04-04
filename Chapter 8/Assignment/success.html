@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class = "container">
+<style>
+  /* .span1{
+    font-size: 2em;
+    margin-left: 2em;
+  }
+  .span2{
+    font-size: 2em;
+    margin-left: 7em;
+  }
+  .span3{
+    font-size: 2em;
+    margin-left: 7em;
+  } */
+  main {
+  	display: block;
+  	margin-right: 25px;
+  }
+  h2 {
+  	font-size: 120%;
+  	padding: .25em 0 .25em 25px;
+  	cursor: pointer;
+  	background: url(images/plus.png) no-repeat left center;
+  }
+  h2.minus {
+  	background: url(images/minus.png) no-repeat left center;
+  }
+  div.open {
+  	display: block;
+  }
+  .divshow {
+  	display: none;
+  }
+  aside {
+  	width: 175px;
+  	float: right;
+  }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="list.js"></script>
+    <title>Thanks for joining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <div class = "center">
+        <br><br><br>
+        <h1>Thank you for joining Book O Roma!</h1>
+        <p>To get started, please look at the magazines we provide.</p>
+      </div>
+      <aside>
+        <img src="" alt="" id="image">
+      </aside>
+        <main id="book_list">
+          <h2>Magazines</h2>
+          <div class = "divshow">
+            <ul id="magazines">
+              <li><a href="book/time.jpg">Time</a></li>
+              <li><a href="book/print.jpg">Print</a></li>
+              <li><a href="book/ng.jpg">National Geographic</a></li>
+            </ul>
+          </div>
+        </main>
+
+
+        <!-- <img class = "img1" src = "book/time.jpg" alt = "tino" width = "210" height = "300">
+        <img class = "img2" src = "book/ng.jpg" alt = "tino" width = "210" height = "300">
+        <img class = "img3" src = "book/print.jpg" alt = "tino" width = "210" height = "300">
+        <span class = "span1">$6.00</span>
+        <span class = "span2">$5.00</span>
+        <span class = "span3">$4.00</span> -->
+      <br><br>
+      <div class = "center">
+        <a href = "calculate.html"><button class = "sign" type="button">Magazine Calculator</button></a>
+      </div>
+
+</body>
+</div>
+</html>

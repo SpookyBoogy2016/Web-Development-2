@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<div class = "container">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+    <title>Book O Rama</title>
+    <h1 class = customfont> Book O Rama</h1>
+  </head>
+  <body>
+    <div class = "center">
+      <script>
+        var total = 0;
+        var books = 0;
+        var count = 0;
+        var price = 0;
+        do
+        {
+          do
+          {
+            books = prompt("How many magazines do you want to buy?");
+            if(books < 1 || isNaN(books))
+            {
+              alert("Please input a correct number.");
+            }
+          } while (books < 1 || isNaN(books));
+          do
+          {
+            price = prompt("What is the price of the magazine?");
+            if(isNaN(price))
+            {
+              alert("Please insert the right price.");
+            }
+          } while (isNaN(price));
+          var again = prompt("Do another calculation? (y/n)", "y");
+          if(again == "y")
+          {
+            count += 1;
+          }
+          total = books * price;
+          for(var i = 1; i <= count; i++)
+          {
+            document.write("Order costs $" + total + "<br>");
+          }
+        } while (again == "y");
+
+      </script>
+      <br>
+      <p>Thank you for using the magazine calculator.</p>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculate Miles Per Gallon</title>
+  <script>
+    var miles = prompt("Enter miles driven");
+    miles = parseFloat(miles);
+    var gallons = prompt("Enter gallons of gas used");
+    gallons = parseFloat(gallons);
+    var mpg = miles / gallons;
+    mpg = parseInt(mpg);
+    // Rounding the final result to 2 decimal places
+    //mpg = mpg.toFixed(2);
+
+    //alert("Miles per gallon = " + mpg);
+  </script>
+</head>
+
+<body>
+  <main>
+    <h1>The Miles Per Gallon Application</h1>
+  </main>
+  <script>;
+    document.write("Miles driven = " + miles + "<br>" + " Gallons of gas = " + gallons + "<br> <br>" + "Miles per Gallon = " + mpg);
+  </script>
+  <br>
+    <p>Thanks for using our MPG application</p>
+</body>
+
+</html>
